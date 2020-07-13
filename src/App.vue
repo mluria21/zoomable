@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <zoomable>
+      <div style="width: 400px;
+                height: 400px;">
+        <img style="width: 100%;height: 100%;object-fit: cover;" src="https://cdn.shopeichlers.com/media/43690/conversions/vjo6oxvqt6rte6fn__main-toy-banner-02-1800.jpg" alt="">
+      </div>
+    </zoomable>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Zoomable from './components/Zoomable'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Zoomable
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
